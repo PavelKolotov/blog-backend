@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-{% extends 'base.html' %}
-{% load static %}
-
-{% block title %}
+  {% extends 'base.html' %}
+  {% load static %}
+  {% block title %}
   <title>Sensive Blog - Contact</title>
-{% endblock %}
-
-{% block content %}
-
+  {% endblock %}
+  {% block content %}
   <!--================ Hero sm banner start =================-->
   <section class="mb-30px">
     <div class="container">
@@ -25,15 +22,12 @@
     </div>
   </section>
   <!--================ Hero sm banner end =================-->
-
-
   <!-- ================ contact section start ================= -->
   <section class="section-margin--small section-margin">
     <div class="container">
       <div class="d-none d-sm-block mb-5 pb-4">
-        {{html_map|safe|escape}}
+        {{html_map|safe}}
       </div>
-
       <div class="row">
         <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
           <div class="media contact-info">
@@ -74,7 +68,7 @@
               </div>
               <div class="col-lg-7">
                 <div class="form-group">
-                    <textarea class="form-control different-control w-100" name="message" id="message" cols="30" rows="5" placeholder="Enter Message"></textarea>
+                  <textarea class="form-control different-control w-100" name="message" id="message" cols="30" rows="5" placeholder="Enter Message"></textarea>
                 </div>
               </div>
             </div>
@@ -87,4 +81,4 @@
     </div>
   </section>
 	<!-- ================ contact section end ================= -->
-{% endblock %}
+  {% endblock %}
